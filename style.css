@@ -1,0 +1,107 @@
+html{
+    height: 100%;
+    background: #0378a6;
+}
+/*#f2f2f2 #025373 #0378a6 #049dd9 #60a4bf*/
+
+body{
+    font-family: helvetica,arial;
+}
+
+h1{
+    font-size: 24px;
+	color: #025373;
+}
+
+h2{
+	font-size: 20px;
+	color: #60a4bf;
+}
+
+h3{
+    color: #049dd9;
+    font-size: 16px;
+}
+
+#myform1{
+	width: 200px;
+	margin: 100px auto;
+	
+	text-align: center;
+    position: relative;
+    
+}
+
+input[type=text]:focus,input[type=password]:focus,textarea:focus{
+	outline:none;
+	border-color:#0378a6;
+	-webkit-box-shadow:0 0 6px #0378a6;
+	-moz-box-shadow:0 0 6px #0378a6;
+	-o-box-shadow:0 0 6px #0378a6;
+	box-shadow:0 0 6px #0378a6;
+	-webkit-transition:border linear .2s, -webkit-box-shadow linear .2s;
+	-moz-transition:border linear .2s, -moz-box-shadow linear .2s;
+	-o-transition: border linear .2s, -o-box-shadow linear .2s;
+	transition:border linear .2s, box-shadow linear .2s;
+}
+
+input[type=text].error,input[type=password].error{
+	outline:none;
+	border-color:#DC1F4C;
+	-webkit-box-shadow:0 0 8px #DC1F4C;
+	-moz-box-shadow:0 0 8px #DC1F4C;
+	-o-box-shadow:0 0 8px #DC1F4C;
+	box-shadow:0 0 8px #DC1F4C;
+	-webkit-transition:border linear .2s;
+	-moz-transition:border linear .2s;
+	-o-transition: border linear .2s;
+	transition:border linear .2s;
+}
+
+form#myform1 fieldset{
+	width: 100%;
+    background: #f2f2f2;
+	margin-left: -50px;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 50px;
+	position: absolute;
+}
+
+form#myform1 fieldset:not(:first-of-type){
+	display: none;
+}
+
+form#myform1 input{
+    height: 40px;
+    width: 80%;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
+}
+
+form#myform1 .action-button{
+    width: 80px;
+    background: #E27575;
+/*	background: #555;*/
+    display: inline-block;
+    margin: 10px 5px;
+    font-weight: bold;
+    color: #f2f2f2;
+    border: 0 none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 8px #B6B6B6;
+}
+
+p.lrc{
+	font-family: 'microsoft yahei','宋体';
+	margin: 30px auto;
+	font-size: 12px;
+	line-height: 30px;
+	color: #2E2E2E;
+	display: none;
+}
